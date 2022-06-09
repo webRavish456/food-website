@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+       <div class="b">
+        <header id="home" class="back"  > 
+            <div class="nav">   
+        <nav>
+            <ul> 
+           <li><a class="a"  href="#home">Home</a></li>
+           <li><a  class="a" href="#about">About</a></li>
+           <li><a  class="a" href="#contact">Contact</a></li>
+           <li><button class="loginbtn" onclick="document.getElementById ('log').style.display='block'">Login</button></li>
+           <li><a  class="a"  href="#review">Review</a></li>
+           <li><a  class="a" href="#blog">Blogs</a></li>
+            </ul>
+        </nav>
+            </div><br>
+      
+        <div class="res"><b>RESTAURANT</b></div>
+        <div class="logo">
+        <div class="eat"><b>EAT HEALTHY FOOD & ENJOY YOUR LIFE.</b></div></div>
+       </header>
+    </div>
+    <section id="log" class="sec">
+        <div class="hero">
+           <div  class="signup-box">
+               <div class="button-box">
+                   <div id="btn"></div>
+                   <button  type="button" class="toggle-btn" onclick="login()"><b>Log In</b></button>
+                   <button  type="button" class="toggle-btn" onclick="register()"><b>Register</b></button>
+               </div>
+           <form id="login" class="input-group">
+             
+               <input class="input-field" type="email"  placeholder="Email" required>
+               <input class="input-field" id="pass1" type="password"  placeholder="Password" required minlength="8" maxlength="15">
+               <span class="eye1"><i class="fa fa-eye" aria-hidden="true" id="eye" onclick="toggle1()"></i></span>
+               <input  type="checkbox" class="check"><span>Remember Password</span>
+               <button type="submit" class="submit-btn">Login</button>
+               <p ><center>Not have an account?<a href="#">Sign up Here</a></a></center></p>
+            </form>
+            <form id="register" class="input-group">
+              
+               <input class="input-field" type="text"  placeholder="Firstname" required minlength="3">
+               <input class="input-field" type="text"  placeholder="Lastname" required minlength="3">
+               <input class="input-field" type="email"  placeholder="Email" required>
+               <input class="pass" id="password" type="password"  placeholder="Password" minlength="8" maxlength="15">
+               <span class="eye2"><i class="fa fa-eye" aria-hidden="true" id="eye3" onclick="toggle()"></i></span>
+               <input class="confirmpassword" type="password"  placeholder="Confirm Password"  minlength="8" maxlength="15"><br><br>
+               <button type="submit" class="sbtn">Register</button>
+               <p><center>By clicking the Register button, you agree to our 
+                   <a href="#">Terms and Condition</a> and <a href="#">Policy Privacy</a></center></p>
+                   <p ><center>Already have an account? <a href="#">Login Here</a></center></p>
+                   
+            </form>
+         
+            </div> 
+     
+       </div>
+
+</section>
+    <section class="main">
+   
+        <div>
+        <h2 class="header">Our Amazing Food Items</h2>
+       </div>
+       <div class="design"> 
+       <div class="item1"> <img class="item-img" src="./images/Pizza/pizza.jfif"  ><div class="order">Order Now<div class="price">Price:115</div></div> </div>
+       <div class="item1"><img class="item-img" src="./images/Burger/Mushroom burger.jpg" ><div class="order">Order Now<div class="price">Price:85</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Manchurian/Chichen Manchurian.jfif"><div class="order">Order Now<div class="price">Price:90</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Chowemin/Chicken Chowmein.jpg"><div class="order">Order Now<div class="price">Price:65</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Dosa/Adai Dosa.jfif"><div class="order">Order Now<div class="price">Price:55</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Chilli/Chicken Chilli.jfif"><div class="order">Order Now<div class="price">Price:60</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/idli/Rava Idli.jfif"><div class="order">Order Now<div class="price">Price:45</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Roll/Chicken roll.jfif"><div class="order">Order Now<div class="price">Price:40</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Paratha/Aloo Paratha.jfif"><div class="order">Order Now<div class="price">Price:175</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Roti/Naan.jfif"><div class="order">Order Now<div class="price">Price:90</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Biryani/Chicken Biryani.jfif"><div class="order">Order Now<div class="price">Price:140</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Paneer/Matar Paneer.jfif"><div class="order">Order Now<div class="price">Price:72</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Chicken/Tandoori Chicken.jfif"><div class="order">Order Now<div class="price">Price:220</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Eggs/Egg Curry.jfif"><div class="order">Order Now<div class="price">Price:115</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Mutton/Mutton Curry.jfif"><div class="order">Order Now<div class="price">Price:115</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Coffee/Latte Coffee.jfif"><div class="order">Order Now<div class="price">Price:125</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/soup/Mix Vegetable Soup.jfif"><div class="order">Order Now<div class="price">Price:70</div></div></div>
+       <div class="item1"> <img class="item-img" src="./images/Sweets/Rasgulla.jfif"><div class="order">Order Now<div class="price">Price:20</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Soft Drink/soft drink.jfif"><div class="order">Order Now<div class="price">Price:92</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/Ice Cream/icecream.jfif"><div class="order">Order Now<div class="price">Price:85</div></div></div>
+       <div class="item1"><img class="item-img" src="./images/juice/momos.jpg"><div class="order">Order Now<div class="price">Price:50</div></div></div>
+    </div>
+    </section>
+    <section class="mai" >
+       <h2 id="review" class="header" >What people say about us ?</h2></div>
+       <div class="at">   
+       <div class="rev">
+              <div class="rimg">
+             <div class="review-img" style="margin-left: 28px;">
+                 <img src="./images/people/men1.png" style="width:50px; height:50px ;">
+                 <div class="review"><b>Shashikant</b></div>
+                     <div class="text">Biryani was wonderful, one of the best. Other Non Veg items and kababs are good.</div>
+            </div>
+             <div class="review-img" style="margin-left:28px ;">
+              <img src="./images/people/girl2.png" style="width:50px; height:50px ;">
+              <div class="review"><b>Anushka</b></div>
+                  <div class="text">Good pizza, good prices, really nice family owned not a big chain pizza store.</div>
+            
+            </div>
+            <div class="review-img"style="margin-left:28px ;">
+              <img src="./images/people/men3.jpg" style="width:50px; height:50px">
+              <div class="review"><b>Deepak</b></div>
+                  <div class="text">The egg rolls were big, that's for sure a plus but very greasy and oily.</div>
+            
+            </div>
+            <div class="review-img" style="margin-left:28px ;">
+              <img src="./images/people/men4.png" style="width:50px; height:50px">
+              <div class="review"><b>Nitish</b></div>
+                  <div class="text">I really appeciate the presentation of regular rasgulla in different flavour.</div>
+            
+            </div>
+            <div class="review-img" style="margin-left: 28px;">
+              <img src="./images/people/girl5.png" style="width:50px; height:50px">
+              <div class="review"><b>Anjali</b></div>
+                  <div class="text">This is a great source of information about wine and of course and tasting.</div>
+            
+            </div>
+            <div class="review-img" style="margin-left:28px ;">
+              <img src="./images/people/girl6.png" style="width:50px; height:50px">
+              <div class="review"><b>Kajal</b></div>
+                  <div class="text">The ambiance is good. The service is very quick. We had soup and starters.</div>
+            
+            </div>
+            <div class="review-img"style="margin-left:28px ;">
+              <img src="./images/people/men7.png" style="width:50px; height:50px">
+              <div class="review"><b>Aditya</b></div>
+                  <div class="text">I absolutely love their moms. Great taste, great quality at a great price.</div>
+            
+            </div>
+            <div class="review-img"style="margin-left:28px ;">
+              <img src="./images/people/men8.png" style="width:50px; height:50px">
+              <div class="review"><b>Rohit</b></div>
+                  <div class="text">The chicken was tender, spiced well, and what one wants from a good tandoori.</div>
+            
+            </div>
+            </div>
+            </div>
+        </section>
+            <section class="mai" >
+          
+                <h2 id="blog"  class="header">Our Blogs</h2></div>
+                     <div class="ourblog">
+                         <div class="blog"> 
+                        <div class="blg"> <img style="width: 90%; height:400px;" src="./images/Blog/blog1.jpg">
+                        <div style="float:left ;font-size:20px;padding: 10px;"><b>Cripsy Pizza</b></div><br><br><p class="bl" style="font-size:100% ;padding:10px">Everyone has a favourite style of pizza cripsy. I like to bake the pizza directly on the oven rack, i do create a bit of a rim around the edge to prevent cheese or sauce from dripping all over the oven. The pizza became tasty and cripsy had good amount of perfectly tender chicken sausage.</p>
+                    </div>
+               
+                    </div>
+                         <div class="blog">
+                            <div class="blg"> <img style="width: 90%; height:400px;" src="./images/Blog/blog3.jpg">
+                                <div style="float:left ;font-size: 20px;padding: 10px;"><b>Cruchy Burger</b></div><br><br><p class="bl" style="font-size:100% ;padding:10px">Better to wait a little time for your burger than to have your burger wait a long time for you. A burger without a cheese like a hug without a squeeze. Quality of food is what I expected. Service was awful and empolyees acted like they were doing me a favour for taking my order.</p>
+                              
+                                </div>
+                         </div>
+                         <div class="blog">
+                            <div class="blg"> <img style="width: 90%; height:400px;" src="./images/Blog/blog4.jpeg">
+                                <div style="float:left ;font-size: 20px;padding: 10px;"><b>Healthy Snacks</b></div><br><br><p class="bl" style="font-size:100% ;padding:10px">I sometimes forget to have breakfast in the morning but when I actually buy a box of cereal, I will probably eat it not only for breakfast but also as a snack later on snack box Snackexperts made me happy today. Yummy healthy snacks alternative for that binge eating habit they can improve te quality of a diet.</p>
+                              
+                                </div>
+                         </div>
+                      </div>
+                </section>
+                <br>
+                <div class="foot">
+                    <div id="about" class="left" style="color:white ;"> 
+                       <p class="abt"><b>About Restaurant</b></p>
+                       <p class="des">We're serving up more than types of food.Its specializes in delicious food featuring fresh ingredients and masterful preparation by the culinary team. Whether you're ordering a multi-course meal or grabbing a drink and pizza at the bar, its lively, casual yet upscale atmosphere makes it perfect for dining with friends, family, clients and business associates.</p>
+                   </div>
+                   <div class=" middle1" style="color:white ;">
+                       <p class="open"><b>Opening Hours</b></p>
+                       <p class="ophrs">Mon-Thu:7:00 AM-10:00 PM<br><br>
+                       Friday:7:00 AM-11:00 PM<br><br>
+                       Sat-Sun:7:00 AM-11:59 PM</p>
+                   </div>
+                   <div id="contact" class=" middle2" style="color:white ;">
+                       <p class="toll"><b>Toll Free</b></p>
+                       <p class="num">1800-54-23-891</p>
+                       <p class="toll"><b>Support</b></p>
+                       <p class="num">onlinefood@food.com</p>
+                     </div>
+                   <div class="right" style="color:white ;">
+                       <p class="loc"><b>Our Location</b></p>
+                       <p class="ol">Bhagalpur College of Engineering <br>
+                        Sabour,Bhagalpur-813210 <br>
+                        <div class="u">
+                        
+                           <ul>
+                               <li class="icon"><img src="./images/icon/instagram.png" style="width:30px ;height: 30px;"></li>
+                               <li class="icon"><img src="./images/icon/linkedln.png" style="width:30px ;height: 30px;"></li>
+                               <li class="icon"><img src="./images/icon/twitter.png" style="width:30px ;height: 30px;"></li>
+                               <li class="icon"><img src="./images/icon/google.png" style="width:35px ;height: 35px;"></li>
+                           </ul>
+                        </div>
+                       </p>
+                   </div>
+                </div>
+                   </footer>
+                <script src="./script.js"></script>
+</body>
+</html>
